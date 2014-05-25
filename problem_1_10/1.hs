@@ -7,4 +7,3 @@ main = do
   let multiplesOfFive  = Set.fromList $ takeWhile (<1000) [5,10..]
 
   print $ foldl (\acc x -> acc + x) 0 $ Set.toList $ Set.union multiplesOfThree multiplesOfFive 
-  --print $ foldl (+) $ Set.toList $ Set.union multiplesOfThree multiplesOfFive 
